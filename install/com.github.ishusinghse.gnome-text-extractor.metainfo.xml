@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component type="desktop-application">
+  <id>com.github.ishusinghse.gnome-text-extractor</id>
+  
+  <name>Text Extractor</name>
+  <summary>Smart OCR tool for extracting text from screenshots</summary>
+  
+  <metadata_license>MIT</metadata_license>
+  <project_license>MIT</project_license>
+  
+  <description>
+    <p>
+      GNOME Text Extractor is an intelligent OCR (Optical Character Recognition)
+      tool that extracts text from screenshots with automatic image preprocessing.
+    </p>
+    <p>Features:</p>
+    <ul>
+      <li>Smart image preprocessing with automatic dark mode detection</li>
+      <li>Fast and accurate text extraction using RapidOCR</li>
+      <li>Seamless GNOME desktop integration</li>
+      <li>Automatic clipboard support</li>
+      <li>Desktop notifications for extraction status</li>
+      <li>Support for multiple screenshot tools</li>
+    </ul>
+    <p>
+      The tool automatically detects and inverts dark-mode screenshots for
+      better OCR accuracy, making it ideal for developers and users who
+      frequently need to extract text from screenshots.
+    </p>
+  </description>
+  
+  <launchable type="desktop-id">text-extractor.desktop</launchable>
+  
+  <screenshots>
+    <screenshot type="default">
+      <caption>Main application workflow</caption>
+      <image>https://raw.githubusercontent.com/IshuSinghSE/gnome-ocr/master/assets/screenshot-main.png</image>
+    </screenshot>
+  </screenshots>
+  
+  <url type="homepage">https://github.com/IshuSinghSE/gnome-ocr</url>
+  <url type="bugtracker">https://github.com/IshuSinghSE/gnome-ocr/issues</url>
+  <url type="help">https://github.com/IshuSinghSE/gnome-ocr/blob/master/README.md</url>
+  
+  <developer_name>IshuSinghSE</developer_name>
+  <update_contact>ishu@example.com</update_contact>
+  
+  <provides>
+    <binary>text-extractor</binary>
+  </provides>
+  
+  <releases>
+    <release version="1.0.0" date="2025-10-28">
+      <description>
+        <p>Initial release</p>
+        <ul>
+          <li>Smart OCR with automatic dark mode detection</li>
+          <li>RapidOCR integration with ONNX runtime</li>
+          <li>Multi-tool screenshot support</li>
+          <li>Automatic clipboard integration</li>
+          <li>Desktop notifications</li>
+        </ul>
+      </description>
+    </release>
+  </releases>
+  
+  <content_rating type="oars-1.1" />
+  
+  <categories>
+    <category>Utility</category>
+    <category>Graphics</category>
+    <category>Office</category>
+  </categories>
+  
+  <keywords>
+    <keyword>OCR</keyword>
+    <keyword>screenshot</keyword>
+    <keyword>text</keyword>
+    <keyword>extraction</keyword>
+    <keyword>capture</keyword>
+  </keywords>
+</component>
