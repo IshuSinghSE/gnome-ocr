@@ -80,11 +80,21 @@ venv.bak/
 target/
 
 # Project-specific
+images/
 results/
 results_rapidocr_cv/
-test_processed_v2.png
+archive/
+assets/
+
+# Test files
 test.png
-images/
+test_dark.png
+test_*.py
+validate_*.py
+
+# Screenshots
+/tmp/text-extractor-screenshot.png
+screenshot*.png
 
 # Temporary screenshot files
 /tmp/text-extractor-screenshot.png
