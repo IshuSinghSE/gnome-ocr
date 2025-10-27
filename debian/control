@@ -1,0 +1,39 @@
+Source: gnome-text-extractor
+Section: utils
+Priority: optional
+Maintainer: IshuSinghSE <ishu@example.com>
+Build-Depends: debhelper-compat (= 13),
+               dh-python,
+               python3-all,
+               python3-setuptools,
+               python3-pip
+Standards-Version: 4.6.0
+Homepage: https://github.com/IshuSinghSE/gnome-ocr
+Vcs-Browser: https://github.com/IshuSinghSE/gnome-ocr
+Vcs-Git: https://github.com/IshuSinghSE/gnome-ocr.git
+Rules-Requires-Root: no
+
+Package: gnome-text-extractor
+Architecture: all
+Depends: ${python3:Depends},
+         ${misc:Depends},
+         python3-pyperclip,
+         python3-numpy,
+         gnome-screenshot | flameshot | spectacle,
+         libnotify-bin
+Recommends: gnome-screenshot
+Description: Smart OCR tool for GNOME desktop with image preprocessing
+ GNOME Text Extractor is an intelligent OCR (Optical Character Recognition)
+ tool that extracts text from screenshots with automatic image preprocessing.
+ .
+ Features:
+  * Smart image preprocessing with automatic dark mode detection
+  * Fast and accurate text extraction using RapidOCR with ONNX runtime
+  * Seamless GNOME desktop integration
+  * Automatic clipboard support
+  * Desktop notifications for extraction status
+  * Support for multiple screenshot tools
+ .
+ The tool automatically detects and inverts dark-mode screenshots for
+ better OCR accuracy, making it ideal for developers and users who
+ frequently need to extract text from screenshots.

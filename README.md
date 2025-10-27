@@ -37,7 +37,24 @@ sudo apt install flameshot libnotify-bin
 
 ## Installation
 
-### Quick Install
+### Option 1: .deb Package (Recommended for Debian/Ubuntu)
+
+Download and install the `.deb` package from the [latest release](https://github.com/IshuSinghSE/gnome-ocr/releases/latest):
+
+```bash
+# Download the latest .deb package
+wget https://github.com/IshuSinghSE/gnome-ocr/releases/latest/download/gnome-text-extractor_1.0.0-1_all.deb
+
+# Install
+sudo dpkg -i gnome-text-extractor_1.0.0-1_all.deb
+
+# Fix dependencies if needed
+sudo apt install -f
+```
+
+The package will automatically install all dependencies and add the application to your menu.
+
+### Option 2: Quick Install (From Source)
 
 1. Clone the repository:
 ```bash
@@ -57,7 +74,7 @@ This will:
 - Install the desktop entry so you can launch from your application menu
 - Set up everything needed to run the app
 
-### Manual Install
+### Option 3: Manual Install
 
 If you prefer to install manually:
 

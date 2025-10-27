@@ -1,0 +1,2 @@
+install/text-extractor.desktop usr/share/applications/
+install/com.github.ishusinghse.gnome-text-extractor.metainfo.xml usr/share/metainfo/

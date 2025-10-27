@@ -1,0 +1,12 @@
+gnome-text-extractor (1.0.0-1) unstable; urgency=medium
+
+  * Initial release (Closes: #XXXXXX)
+  * Smart OCR with automatic dark mode detection
+  * RapidOCR integration with ONNX runtime
+  * Multi-tool screenshot support (gnome-screenshot, flameshot, spectacle)
+  * Automatic clipboard integration
+  * Desktop notifications
+  * GNOME desktop integration with .desktop file
+  * Python 3.8+ support
+
+ -- IshuSinghSE <ishu@example.com>  Mon, 28 Oct 2025 00:00:00 +0000
