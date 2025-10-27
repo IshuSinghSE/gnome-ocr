@@ -34,12 +34,12 @@ if [ ${#MISSING_TOOLS[@]} -ne 0 ]; then
     echo "⚠ Missing build tools: ${MISSING_TOOLS[*]}"
     echo ""
     echo "Install them with:"
-    echo "  sudo apt install build-essential debhelper dh-python python3-all python3-setuptools"
+    echo "  sudo apt install build-essential debhelper dh-python python3-all python3-setuptools python3-pip pybuild-plugin-pyproject python3-hatchling"
     echo ""
     read -p "Install automatically? (y/n) " -n 1 -r
     echo
     if [[ $REPLY =~ ^[Yy]$ ]]; then
-        sudo apt install -y build-essential debhelper dh-python python3-all python3-setuptools python3-pip
+        sudo apt install -y build-essential debhelper dh-python python3-all python3-setuptools python3-pip pybuild-plugin-pyproject python3-hatchling
     else
         exit 1
     fi

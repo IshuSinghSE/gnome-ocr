@@ -6,7 +6,9 @@ Build-Depends: debhelper-compat (= 13),
                dh-python,
                python3-all,
                python3-setuptools,
-               python3-pip
+               python3-pip,
+               pybuild-plugin-pyproject,
+               python3-hatchling
 Standards-Version: 4.6.0
 Homepage: https://github.com/IshuSinghSE/gnome-ocr
 Vcs-Browser: https://github.com/IshuSinghSE/gnome-ocr
