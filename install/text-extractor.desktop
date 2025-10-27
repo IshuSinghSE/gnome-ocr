@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Text Extractor
+Comment=Extract text from screenshots using OCR
+Exec=python3 -m text_extractor.main
+Icon=text-extractor
+Terminal=false
+Categories=Utility;GNOME;GTK;
+Keywords=ocr;screenshot;text;extract;
+StartupNotify=false

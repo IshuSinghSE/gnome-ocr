@@ -78,3 +78,14 @@ venv.bak/
 
 # Maven target (present in workspace tasks)
 target/
+
+# Project-specific
+results/
+results_rapidocr_cv/
+test_processed_v2.png
+test.png
+images/
+
+# Temporary screenshot files
+/tmp/text-extractor-screenshot.png
+
