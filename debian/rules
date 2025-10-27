@@ -22,8 +22,12 @@ override_dh_auto_install:
 
 override_dh_python3:
 	dh_python3
-	# Bundle Python dependencies that aren't in Debian repos
-	python3 -m pip install --target=debian/gnome-text-extractor/usr/lib/python3/dist-packages \
+	# Bundle only OCR-specific dependencies that aren't in Debian repos
+	# Install to a vendor directory to avoid conflicts
+	mkdir -p debian/gnome-text-extractor/usr/lib/gnome-text-extractor/vendor
+	python3 -m pip install --target=debian/gnome-text-extractor/usr/lib/gnome-text-extractor/vendor \
 		rapidocr-onnxruntime>=1.3.0 \
-		onnxruntime>=1.16.0 \
-		opencv-python-headless>=4.8.0 || true
+		onnxruntime>=1.16.0 || true
+	# Create a .pth file to add vendor directory to Python path
+	mkdir -p debian/gnome-text-extractor/usr/lib/python3/dist-packages
+	echo "/usr/lib/gnome-text-extractor/vendor" > debian/gnome-text-extractor/usr/lib/python3/dist-packages/gnome-text-extractor-vendor.pth
